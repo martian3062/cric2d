@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #000000, #111111);
+  font-family: sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+@keyframes pulseBg {
+  0% { background-color: #000000; }
+  100% { background-color: #0a0a0a; }
+}
+
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: transparent;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  animation: floatClouds linear infinite;
+}
+
+.cloud:nth-child(1) {
+  width: 120px; height: 60px; top: 20px; left: -150px; animation-duration: 60s;
+}
+.cloud:nth-child(2) {
+  width: 180px; height: 90px; top: 50px; left: -200px; animation-duration: 80s;
+}
+.cloud:nth-child(3) {
+  width: 100px; height: 50px; top: 70px; left: -100px; animation-duration: 70s;
+}
+
+@keyframes floatClouds {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(120vw); }
+}
+
+.crowd {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: repeating-linear-gradient(
+    to right,
+    #333 0px,
+    #333 10px,
+    #111 10px,
+    #111 20px
+  );
+  animation: crowdMove 2s linear infinite;
+  z-index: -1;
+}
+
+@keyframes crowdMove {
+  0% { background-position: 0px 0; }
+  100% { background-position: 20px 0; }
+}
+
+canvas {
+  border: 3px solid limegreen;
+  background: repeating-linear-gradient(
+    45deg,
+    #003300,
+    #003300 10px,
+    #004d00 10px,
+    #004d00 20px
+  );
+  box-shadow: 0 0 30px limegreen;
+  border-radius: 10px;
+  margin-top: 20px;
+  animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { box-shadow: 0 0 10px limegreen; }
+  100% { box-shadow: 0 0 50px lime; }
+}
+
+.glow {
+  text-shadow: 0 0 10px limegreen, 0 0 20px limegreen;
+}

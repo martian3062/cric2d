@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CrickAI 2D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body data-session-id="{{ sessionId }}">
+    <div id="scorebar">
+        <span>Runs: <span id="score" class="value">0</span></span> |
+        <span>Overs: <span id="over-count" class="value">0.0</span></span> |
+        <span>Wickets: <span id="wickets" class="value">0</span></span> |
+        <span>Ball Speed: <span id="ball-speed" class="value">-</span></span> |
+        <span>Type: <span id="ball-type" class="value text-capitalize">-</span></span>
+    </div>
+    <div id="main-container">
+        <div id="game-container">
+            <h1>CrickAI: Field Defense</h1>
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+            <div id="instructions">
+                <p><strong>Aim</strong> with your mouse. <strong>Hold Spacebar</strong> to charge power. <strong>Release</strong> to hit!</p>
+            </div>
+            <div id="error-display"></div>
+        </div>
+        <div id="leaderboard-container">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard-list"></ul>
+        </div>
+    </div>
+    <div id="name-modal">
+        <div id="modal-content">
+            <h2>Enter Your Name</h2>
+            <input type="text" id="playerNameInput" placeholder="Player 1" maxlength="12">
+            <button id="startGameBtn">Start Game</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>
+
