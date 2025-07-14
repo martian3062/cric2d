@@ -8,7 +8,8 @@
 
 CrickAI is a top-down, 2D cricket game where a human player takes on an advanced AI opponent. The core of the game is a dynamic AI fielding system that learns from the player's shots and adapts its strategy in real-time. The player controls the batsman, aiming with the mouse and controlling power with the spacebar, while the AI manages the bowling and field placements.
 
-This project was built to fulfill the "Assignment for AI Developer," focusing on creating an engaging game experience driven by intelligent agent behavior, including predictive logic and real-time adaptation.
+<img width="634" height="367" alt="image" src="https://github.com/user-attachments/assets/0520ebbf-c24a-4a43-9c6b-915602ee4d33" />
+
 
 ## Features
 
@@ -35,25 +36,3 @@ This project was built to fulfill the "Assignment for AI Developer," focusing on
 * **Styling:** Tailwind CSS & Custom CSS for animations
 
 ---
-
-## Project Structure
-
-
-cric2djfk/
-│
-├── app.py              # Main Flask server, handles AI logic and API routes.
-├── model.py            # Contains the scikit-learn KMeans prediction model.
-├── requirements.txt    # Lists the required Python packages.
-│
-├── static/
-│   ├── css/
-│   │   └── style.css   # Custom CSS for animations and theme.
-│   ├── js/
-│   │   └── game.js     # Core frontend logic, game loop, physics, and drawing.
-│   └── images/
-│       ├── batsman.gif
-│       ├── bowler.png
-│       └── fielder.png
-│
-└── templates/
-└── index.html      # The main HTML file for the game interface.
