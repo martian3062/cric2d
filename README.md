@@ -3,6 +3,14 @@
 **Live Demo:** [https://cric2djfk.pythonanywhere.com/](https://cric2djfk.pythonanywhere.com/)
 
 ---
+## Tech Stack
+
+* **Backend:** Flask (Python)
+* **AI/Machine Learning:** Scikit-learn, NumPy
+* **Frontend:** HTML5 Canvas, JavaScript (ES6)
+* **Styling:** Tailwind CSS & Custom CSS for animations
+
+---
 
 ## Project Overview
 
@@ -28,11 +36,4 @@ CrickAI is a top-down, 2D cricket game where a human player takes on an advanced
 
 ---
 
-## Tech Stack
 
-* **Backend:** Flask (Python)
-* **AI/Machine Learning:** Scikit-learn, NumPy
-* **Frontend:** HTML5 Canvas, JavaScript (ES6)
-* **Styling:** Tailwind CSS & Custom CSS for animations
-
----
